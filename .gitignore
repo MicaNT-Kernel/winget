@@ -1,0 +1,16 @@
+build/
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+*.obj
+*.o
+*.a
+*.lib
+*.pdb
+.vs/
+.vscode/
+.idea/
+CMakeSettings.json
+compile_commands.json
