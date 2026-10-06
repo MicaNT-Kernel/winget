@@ -20,6 +20,8 @@ jobs:
             compiler: gcc-13
           - os: ubuntu-latest
             compiler: clang-17
+          - os: macos-latest
+            compiler: apple-clang
 
     steps:
       - name: Checkout code
@@ -41,4 +43,4 @@ jobs:
 
       - name: Run Tests
         run: |
-          ctest --test-dir build --output-on-failure
+          ctest --test-dir build -C Release --output-on-failure
